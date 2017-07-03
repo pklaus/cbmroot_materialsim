@@ -541,102 +541,124 @@ void CbmMvdRadLength::Finish() {
     call->cd(1);
     Histo1D_Station[0][0]->SetTitle("Material Budget Station 0, cu, layer 0");
     Histo1D_Station[0][0]->SetFillColor(8);
-    Histo1D_Station[0][0]->Draw("");
+    Histo1D_Station[0][0]->SetFillStyle(1001);
+    Histo1D_Station[0][0]->Draw("HIST");
 
     call->cd(2);
     Histo1D_Station[0][1]->SetTitle("Material Budget Station 0, si, layer 0");
     Histo1D_Station[0][1]->SetFillColor(38);
-    Histo1D_Station[0][1]->Draw("");
+    Histo1D_Station[0][1]->SetFillStyle(1001);
+    Histo1D_Station[0][1]->Draw("HIST");
 
     call->cd(3);
     Histo1D_Station[0][2]->SetTitle("Material Budget Station 0, al, layer 0");
     Histo1D_Station[0][2]->SetFillColor(1);
-    Histo1D_Station[0][2]->Draw("");
+    Histo1D_Station[0][2]->SetFillStyle(1001);
+    Histo1D_Station[0][2]->Draw("HIST");
 
     call->cd(4);
     Histo1D_Station[0][3]->SetTitle("Material Budget Station 0, cvd");
     Histo1D_Station[0][3]->SetFillColor(16);
-    Histo1D_Station[0][3]->Draw("");
+    Histo1D_Station[0][3]->SetFillStyle(1001);
+    Histo1D_Station[0][3]->Draw("HIST");
 
     call->cd(5);
     Histo1D_Station[0][4]->SetTitle("Material Budget Station 0, al, layer 1");
     Histo1D_Station[0][4]->SetFillColor(1);
-    Histo1D_Station[0][4]->Draw("");
+    Histo1D_Station[0][4]->SetFillStyle(1001);
+    Histo1D_Station[0][4]->Draw("HIST");
 
     call->cd(6);
     Histo1D_Station[0][5]->SetTitle("Material Budget Station 0, si, layer 1");
     Histo1D_Station[0][5]->SetFillColor(38);
-    Histo1D_Station[0][5]->Draw("");
+    Histo1D_Station[0][5]->SetFillStyle(1001);
+    Histo1D_Station[0][5]->Draw("HIST");
 
     call->cd(7);
     Histo1D_Station[0][6]->SetTitle("Material Budget Station 0, cu, layer 1");
     Histo1D_Station[0][6]->SetFillColor(8);
-    Histo1D_Station[0][6]->Draw("");
+    Histo1D_Station[0][6]->SetFillStyle(1001);
+    Histo1D_Station[0][6]->Draw("HIST");
 
     call->cd(8);
     Histo1D_Station_norm[0]->SetTitle("Material Budget Station 0, all");
     Histo1D_Station_norm[0]->SetFillColor(8);
-    Histo1D_Station_norm[0]->Draw("");
+    Histo1D_Station_norm[0]->SetFillStyle(1001);
+    Histo1D_Station_norm[0]->Draw("HIST");
 
     Histo1D_al_cvd_si_Station[0]->SetFillColor(38);
-    Histo1D_al_cvd_si_Station[0]->Draw("same");
+    Histo1D_al_cvd_si_Station[0]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station[0]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station[0]->SetFillColor(1);
-    Histo1D_cvd_si_Station[0]->Draw("same");
+    Histo1D_cvd_si_Station[0]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station[0]->Draw("SAME HIST");
 
     Histo1D_Station[0][3]->SetFillColor(16);
-    Histo1D_Station[0][3]->Draw("same");
+    Histo1D_Station[0][3]->SetFillStyle(1001);
+    Histo1D_Station[0][3]->Draw("SAME HIST");
 
     //---- Overview Station_1
 
     call->cd(9);
     Histo1D_Station[1][0]->SetTitle("Material Budget Station 1, cu, layer 0");
     Histo1D_Station[1][0]->SetFillColor(8);
-    Histo1D_Station[1][0]->Draw("");
+    Histo1D_Station[1][0]->SetFillStyle(1001);
+    Histo1D_Station[1][0]->Draw("HIST");
 
     call->cd(10);
     Histo1D_Station[1][1]->SetTitle("Material Budget Station 1, si, layer 0");
     Histo1D_Station[1][1]->SetFillColor(38);
-    Histo1D_Station[1][1]->Draw("");
+    Histo1D_Station[1][1]->SetFillStyle(1001);
+    Histo1D_Station[1][1]->Draw("HIST");
 
     call->cd(11);
     Histo1D_Station[1][2]->SetTitle("Material Budget Station 1, al, layer 0");
     Histo1D_Station[1][2]->SetFillColor(1);
-    Histo1D_Station[1][2]->Draw("");
+    Histo1D_Station[1][2]->SetFillStyle(1001);
+    Histo1D_Station[1][2]->Draw("HIST");
 
     call->cd(12);
     Histo1D_Station[1][3]->SetTitle("Material Budget Station 1, cvd");
     Histo1D_Station[1][3]->SetFillColor(16);
-    Histo1D_Station[1][3]->Draw("");
+    Histo1D_Station[1][3]->SetFillStyle(1001);
+    Histo1D_Station[1][3]->Draw("HIST");
 
     call->cd(13);
     Histo1D_Station[1][4]->SetTitle("Material Budget Station 1, al, layer 1");
     Histo1D_Station[1][4]->SetFillColor(1);
-    Histo1D_Station[1][4]->Draw("");
+    Histo1D_Station[1][4]->SetFillStyle(1001);
+    Histo1D_Station[1][4]->Draw("HIST");
 
     call->cd(14);
     Histo1D_Station[1][5]->SetTitle("Material Budget Station 1, si, layer 1");
     Histo1D_Station[1][5]->SetFillColor(38);
-    Histo1D_Station[1][5]->Draw("");
+    Histo1D_Station[1][5]->SetFillStyle(1001);
+    Histo1D_Station[1][5]->Draw("HIST");
 
     call->cd(15);
     Histo1D_Station[1][6]->SetTitle("Material Budget Station 1, cu, layer 1");
     Histo1D_Station[1][6]->SetFillColor(8);
-    Histo1D_Station[1][6]->Draw("");
+    Histo1D_Station[1][6]->SetFillStyle(1001);
+    Histo1D_Station[1][6]->Draw("HIST");
 
     call->cd(16);
     Histo1D_Station_norm[1]->SetTitle("Material Budget Station 1, all");
     Histo1D_Station_norm[1]->SetFillColor(8);
-    Histo1D_Station_norm[1]->Draw("");
+    Histo1D_Station_norm[1]->SetFillStyle(1001);
+    Histo1D_Station_norm[1]->Draw("HIST");
 
     Histo1D_al_cvd_si_Station[1]->SetFillColor(38);
-    Histo1D_al_cvd_si_Station[1]->Draw("same");
+    Histo1D_al_cvd_si_Station[1]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station[1]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station[1]->SetFillColor(1);
-    Histo1D_cvd_si_Station[1]->Draw("same");
+    Histo1D_cvd_si_Station[1]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station[1]->Draw("SAME HIST");
 
     Histo1D_Station[1][3]->SetFillColor(16);
-    Histo1D_Station[1][3]->Draw("same");
+    Histo1D_Station[1][3]->SetFillStyle(1001);
+    Histo1D_Station[1][3]->Draw("SAME HIST");
 
 
     //---- Overview Station_2
@@ -644,51 +666,62 @@ void CbmMvdRadLength::Finish() {
     call->cd(17);
     Histo1D_Station[2][0]->SetTitle("Material Budget Station 2, cu, layer 0");
     Histo1D_Station[2][0]->SetFillColor(8);
-    Histo1D_Station[2][0]->Draw("");
+    Histo1D_Station[2][0]->SetFillStyle(1001);
+    Histo1D_Station[2][0]->Draw("HIST");
 
     call->cd(18);
     Histo1D_Station[2][1]->SetTitle("Material Budget Station 2, si, layer 0");
     Histo1D_Station[2][1]->SetFillColor(38);
-    Histo1D_Station[2][1]->Draw("");
+    Histo1D_Station[2][1]->SetFillStyle(1001);
+    Histo1D_Station[2][1]->Draw("HIST");
 
     call->cd(19);
     Histo1D_Station[2][2]->SetTitle("Material Budget Station 2, al, layer 0");
     Histo1D_Station[2][2]->SetFillColor(1);
-    Histo1D_Station[2][2]->Draw("");
+    Histo1D_Station[2][2]->SetFillStyle(1001);
+    Histo1D_Station[2][2]->Draw("HIST");
 
     call->cd(20);
     Histo1D_Station[2][3]->SetTitle("Material Budget Station 2, CF-TPG-CF");
     Histo1D_Station[2][3]->SetFillColor(16);
-    Histo1D_Station[2][3]->Draw("");
+    Histo1D_Station[2][3]->SetFillStyle(1001);
+    Histo1D_Station[2][3]->Draw("HIST");
 
     call->cd(21);
     Histo1D_Station[2][4]->SetTitle("Material Budget Station 2, al, layer 1");
     Histo1D_Station[2][4]->SetFillColor(1);
-    Histo1D_Station[2][4]->Draw("");
+    Histo1D_Station[2][4]->SetFillStyle(1001);
+    Histo1D_Station[2][4]->Draw("HIST");
 
     call->cd(22);
     Histo1D_Station[2][5]->SetTitle("Material Budget Station 2, si, layer 1");
     Histo1D_Station[2][5]->SetFillColor(38);
-    Histo1D_Station[2][5]->Draw("");
+    Histo1D_Station[2][5]->SetFillStyle(1001);
+    Histo1D_Station[2][5]->Draw("HIST");
 
     call->cd(23);
     Histo1D_Station[2][6]->SetTitle("Material Budget Station 2, cu, layer 1");
     Histo1D_Station[2][6]->SetFillColor(8);
-    Histo1D_Station[2][6]->Draw("");
+    Histo1D_Station[2][6]->SetFillStyle(1001);
+    Histo1D_Station[2][6]->Draw("HIST");
 
     call->cd(24);
     Histo1D_Station_norm[2]->SetTitle("Material Budget Station 2, all");
     Histo1D_Station_norm[2]->SetFillColor(8);
-    Histo1D_Station_norm[2]->Draw("");
+    Histo1D_Station_norm[2]->SetFillStyle(1001);
+    Histo1D_Station_norm[2]->Draw("HIST");
 
     Histo1D_al_cvd_si_Station[2]->SetFillColor(38);
-    Histo1D_al_cvd_si_Station[2]->Draw("same");
+    Histo1D_al_cvd_si_Station[2]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station[2]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station[2]->SetFillColor(1);
-    Histo1D_cvd_si_Station[2]->Draw("same");
+    Histo1D_cvd_si_Station[2]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station[2]->Draw("SAME HIST");
 
     Histo1D_Station[2][3]->SetFillColor(16);
-    Histo1D_Station[2][3]->Draw("same");
+    Histo1D_Station[2][3]->SetFillStyle(1001);
+    Histo1D_Station[2][3]->Draw("SAME HIST");
 
 
     //---- Overview Station_3
@@ -696,51 +729,62 @@ void CbmMvdRadLength::Finish() {
     call->cd(25);
     Histo1D_Station[3][0]->SetTitle("Material Budget Station 3, cu, layer 0");
     Histo1D_Station[3][0]->SetFillColor(8);
-    Histo1D_Station[3][0]->Draw("");
+    Histo1D_Station[3][0]->SetFillStyle(1001);
+    Histo1D_Station[3][0]->Draw("HIST");
 
     call->cd(26);
     Histo1D_Station[3][1]->SetTitle("Material Budget Station 3, si, layer 0");
     Histo1D_Station[3][1]->SetFillColor(38);
-    Histo1D_Station[3][1]->Draw("");
+    Histo1D_Station[3][1]->SetFillStyle(1001);
+    Histo1D_Station[3][1]->Draw("HIST");
 
     call->cd(27);
     Histo1D_Station[3][2]->SetTitle("Material Budget Station 3, al, layer 0");
     Histo1D_Station[3][2]->SetFillColor(1);
-    Histo1D_Station[3][2]->Draw("");
+    Histo1D_Station[3][2]->SetFillStyle(1001);
+    Histo1D_Station[3][2]->Draw("HIST");
 
     call->cd(28);
     Histo1D_Station[3][3]->SetTitle("Material Budget Station 3, CF-TPG-CF");
     Histo1D_Station[3][3]->SetFillColor(16);
-    Histo1D_Station[3][3]->Draw("");
+    Histo1D_Station[3][3]->SetFillStyle(1001);
+    Histo1D_Station[3][3]->Draw("HIST");
 
     call->cd(29);
     Histo1D_Station[3][4]->SetTitle("Material Budget Station 3, al, layer 1");
     Histo1D_Station[3][4]->SetFillColor(1);
-    Histo1D_Station[3][4]->Draw("");
+    Histo1D_Station[3][4]->SetFillStyle(1001);
+    Histo1D_Station[3][4]->Draw("HIST");
 
     call->cd(30);
     Histo1D_Station[3][5]->SetTitle("Material Budget Station 3, si, layer 1");
     Histo1D_Station[3][5]->SetFillColor(38);
-    Histo1D_Station[3][5]->Draw("");
+    Histo1D_Station[3][5]->SetFillStyle(1001);
+    Histo1D_Station[3][5]->Draw("HIST");
 
     call->cd(31);
     Histo1D_Station[3][6]->SetTitle("Material Budget Station 3, cu, layer 1");
     Histo1D_Station[3][6]->SetFillColor(8);
-    Histo1D_Station[3][6]->Draw("");
+    Histo1D_Station[3][6]->SetFillStyle(1001);
+    Histo1D_Station[3][6]->Draw("HIST");
 
     call->cd(32);
     Histo1D_Station_norm[3]->SetTitle("Material Budget Station 3, all");
     Histo1D_Station_norm[3]->SetFillColor(8);
-    Histo1D_Station_norm[3]->Draw("");
+    Histo1D_Station_norm[3]->SetFillStyle(1001);
+    Histo1D_Station_norm[3]->Draw("HIST");
 
     Histo1D_al_cvd_si_Station[3]->SetFillColor(38);
-    Histo1D_al_cvd_si_Station[3]->Draw("same");
+    Histo1D_al_cvd_si_Station[3]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station[3]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station[3]->SetFillColor(1);
-    Histo1D_cvd_si_Station[3]->Draw("same");
+    Histo1D_cvd_si_Station[3]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station[3]->Draw("SAME HIST");
 
     Histo1D_Station[3][3]->SetFillColor(16);
-    Histo1D_Station[3][3]->Draw("same");
+    Histo1D_Station[3][3]->SetFillStyle(1001);
+    Histo1D_Station[3][3]->Draw("SAME HIST");
 
     // Material Budget per Station
     //---- Station_0
@@ -748,16 +792,19 @@ void CbmMvdRadLength::Finish() {
     cmaterialbudget_Station0_CVD->cd();
     Histo1D_Station_norm[0]->SetTitle("Material Budget Station 0");
     Histo1D_Station_norm[0]->SetFillColor(8);
+    Histo1D_Station_norm[0]->SetFillStyle(1001);
     Histo1D_Station_norm[0]->SetMaximum(y_maximum);
     Histo1D_Station_norm[0]->GetXaxis()->SetTitle("#vartheta [#circ]");
     Histo1D_Station_norm[0]->GetYaxis()->SetTitle("x/X_{0} [\%]");
-    Histo1D_Station_norm[0]->Draw("");
+    Histo1D_Station_norm[0]->Draw("HIST");
 
     Histo1D_cvd_si_Station[0]->SetFillColor(38);
-    Histo1D_cvd_si_Station[0]->Draw("same");
+    Histo1D_cvd_si_Station[0]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station[0]->Draw("SAME HIST");
 
     Histo1D_Station[0][2]->SetFillColor(16);
-    Histo1D_Station[0][2]->Draw("same");
+    Histo1D_Station[0][2]->SetFillStyle(1001);
+    Histo1D_Station[0][2]->Draw("SAME HIST");
 
     TLine* MB_limit_S0 = new TLine(5,0.3,30,0.3);
     MB_limit_S0->SetLineWidth(3);
@@ -773,26 +820,30 @@ void CbmMvdRadLength::Finish() {
     TLegend* legendmb_S0 = new TLegend(0.7,0.6,0.9,0.3);
     legendmb_S0->SetBorderSize(1);
     legendmb_S0->SetFillColor(0);
+    legendmb_S0->SetFillStyle(1001);
     legendmb_S0->AddEntry(Histo1D_Station[0][0],"FPC","f");
     legendmb_S0->AddEntry(Histo1D_Station[0][1],"Sensors","f");
     legendmb_S0->AddEntry(Histo1D_Station[0][2],"CVD","f");
-    legendmb_S0->Draw();
+    legendmb_S0->Draw("HIST");
 
     //---- Station_1
 
     cmaterialbudget_Station1_CVD->cd();
     Histo1D_Station_norm[1]->SetTitle("Material Budget Station 1");
     Histo1D_Station_norm[1]->SetFillColor(8);
+    Histo1D_Station_norm[1]->SetFillStyle(1001);
     Histo1D_Station_norm[1]->SetMaximum(y_maximum);
     Histo1D_Station_norm[1]->GetXaxis()->SetTitle("#vartheta [#circ]");
     Histo1D_Station_norm[1]->GetYaxis()->SetTitle("x/X_{0} [\%]");
-    Histo1D_Station_norm[1]->Draw("");
+    Histo1D_Station_norm[1]->Draw("HIST");
 
     Histo1D_cvd_si_Station[1]->SetFillColor(38);
-    Histo1D_cvd_si_Station[1]->Draw("same");
+    Histo1D_cvd_si_Station[1]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station[1]->Draw("SAME HIST");
 
     Histo1D_Station[1][2]->SetFillColor(16);
-    Histo1D_Station[1][2]->Draw("same");
+    Histo1D_Station[1][2]->SetFillStyle(1001);
+    Histo1D_Station[1][2]->Draw("SAME HIST");
 
     TLine* MB_limit_S1 = new TLine(2,0.5,30,0.5);
     MB_limit_S1->SetLineWidth(3);
@@ -808,26 +859,30 @@ void CbmMvdRadLength::Finish() {
     TLegend* legendmb_S1 = new TLegend(0.7,0.6,0.9,0.3);
     legendmb_S1->SetBorderSize(1);
     legendmb_S1->SetFillColor(0);
+    legendmb_S1->SetFillStyle(1001);
     legendmb_S1->AddEntry(Histo1D_Station[1][0],"FPC","f");
     legendmb_S1->AddEntry(Histo1D_Station[1][1],"Sensors","f");
     legendmb_S1->AddEntry(Histo1D_Station[1][2],"CVD","f");
-    legendmb_S1->Draw();
+    legendmb_S1->Draw("HIST");
 
     //---- Station_2
 
     cmaterialbudget_Station2_CVD->cd();
     Histo1D_Station_norm[2]->SetTitle("Material Budget Station 2");
     Histo1D_Station_norm[2]->SetFillColor(8);
+    Histo1D_Station_norm[2]->SetFillStyle(1001);
     Histo1D_Station_norm[2]->SetMaximum(y_maximum);
     Histo1D_Station_norm[2]->GetXaxis()->SetTitle("#vartheta [#circ]");
     Histo1D_Station_norm[2]->GetYaxis()->SetTitle("x/X_{0} [\%]");
-    Histo1D_Station_norm[2]->Draw("");
+    Histo1D_Station_norm[2]->Draw("HIST");
 
     Histo1D_cvd_si_Station[2]->SetFillColor(38);
-    Histo1D_cvd_si_Station[2]->Draw("same");
+    Histo1D_cvd_si_Station[2]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station[2]->Draw("SAME HIST");
 
     Histo1D_Station[2][2]->SetFillColor(16);
-    Histo1D_Station[2][2]->Draw("same");
+    Histo1D_Station[2][2]->SetFillStyle(1001);
+    Histo1D_Station[2][2]->Draw("SAME HIST");
 
     TLine* MB_limit_S2 = new TLine(2,0.5,30,0.5);
     MB_limit_S2->SetLineWidth(3);
@@ -843,26 +898,30 @@ void CbmMvdRadLength::Finish() {
     TLegend* legendmb_S2 = new TLegend(0.7,0.6,0.9,0.3);
     legendmb_S2->SetBorderSize(1);
     legendmb_S2->SetFillColor(0);
+    legendmb_S2->SetFillStyle(1001);
     legendmb_S2->AddEntry(Histo1D_Station[2][0],"FPC","f");
     legendmb_S2->AddEntry(Histo1D_Station[2][1],"Sensors","f");
     legendmb_S2->AddEntry(Histo1D_Station[2][2],"CF-TPG-CF","f");
-    legendmb_S2->Draw();
+    legendmb_S2->Draw("HIST");
 
     //---- Station_3
 
     cmaterialbudget_Station3_CVD->cd();
     Histo1D_Station_norm[3]->SetTitle("Material Budget Station 3");
     Histo1D_Station_norm[3]->SetFillColor(8);
+    Histo1D_Station_norm[3]->SetFillStyle(1001);
     Histo1D_Station_norm[3]->SetMaximum(y_maximum);
     Histo1D_Station_norm[3]->GetXaxis()->SetTitle("#vartheta [#circ]");
     Histo1D_Station_norm[3]->GetYaxis()->SetTitle("x/X_{0} [\%]");
-    Histo1D_Station_norm[3]->Draw("");
+    Histo1D_Station_norm[3]->Draw("HIST");
 
     Histo1D_cvd_si_Station[3]->SetFillColor(38);
-    Histo1D_cvd_si_Station[3]->Draw("same");
+    Histo1D_cvd_si_Station[3]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station[3]->Draw("SAME HIST");
 
     Histo1D_Station[3][2]->SetFillColor(16);
-    Histo1D_Station[3][2]->Draw("same");
+    Histo1D_Station[3][2]->SetFillStyle(1001);
+    Histo1D_Station[3][2]->Draw("SAME HIST");
 
     TLine* MB_limit_S3 = new TLine(2,0.5,30,0.5);
     MB_limit_S3->SetLineWidth(3);
@@ -878,10 +937,11 @@ void CbmMvdRadLength::Finish() {
     TLegend* legendmb_S3 = new TLegend(0.7,0.6,0.9,0.3);
     legendmb_S3->SetBorderSize(1);
     legendmb_S3->SetFillColor(0);
+    legendmb_S3->SetFillStyle(1001);
     legendmb_S3->AddEntry(Histo1D_Station[3][0],"FPC","f");
     legendmb_S3->AddEntry(Histo1D_Station[3][1],"Sensors","f");
     legendmb_S3->AddEntry(Histo1D_Station[3][2],"CF-TPG-CF","f");
-    legendmb_S3->Draw();
+    legendmb_S3->Draw("HIST");
 */
     //2D theta vs phi
     /*
@@ -920,8 +980,9 @@ void CbmMvdRadLength::Finish() {
     //acceptance distribution
 
     cmaterialbudget_Station0_CVD_in_out->cd();
-    Histo1D_Station_norm_in[0]->SetTitle("Material Budget Station 0");
+    Histo1D_Station_norm_in[0]->SetTitle("Material Budget Station 0 - chang");
     Histo1D_Station_norm_in[0]->SetFillColor(8);
+    Histo1D_Station_norm_in[0]->SetFillStyle(1001);
     Histo1D_Station_norm_in[0]->SetMaximum(y_maximum);
     Histo1D_Station_norm_in[0]->GetXaxis()->SetTitle("#vartheta [#circ]");
     Histo1D_Station_norm_in[0]->GetYaxis()->SetTitle("x/X_{0} [\%]");
@@ -932,28 +993,35 @@ void CbmMvdRadLength::Finish() {
     Histo1D_Station_norm_in[0]->GetXaxis()->SetLabelSize(0.06);
     Histo1D_Station_norm_in[0]->GetXaxis()->SetRange(0,600);
     Histo1D_Station_norm_in[0]->GetYaxis()->SetLabelSize(0.06);
-    Histo1D_Station_norm_in[0]->Draw("");
+    Histo1D_Station_norm_in[0]->Draw("HIST");
 
     Histo1D_al_cvd_si_Station_in[0]->SetFillColor(38);
-    Histo1D_al_cvd_si_Station_in[0]->Draw("same");
+    Histo1D_al_cvd_si_Station_in[0]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station_in[0]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station_in[0]->SetFillColor(1);
-    Histo1D_cvd_si_Station_in[0]->Draw("same");
+    Histo1D_cvd_si_Station_in[0]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station_in[0]->Draw("SAME HIST");
 
     Histo1D_Station_in[0][3]->SetFillColor(16);
-    Histo1D_Station_in[0][3]->Draw("same");
+    Histo1D_Station_in[0][3]->SetFillStyle(1001);
+    Histo1D_Station_in[0][3]->Draw("SAME HIST");
 
     Histo1D_Station_norm_out[0]->SetFillColor(29);
-    Histo1D_Station_norm_out[0]->Draw("same");
+    Histo1D_Station_norm_out[0]->SetFillStyle(1001);
+    Histo1D_Station_norm_out[0]->Draw("SAME HIST");
 
     Histo1D_al_cvd_si_Station_out[0]->SetFillColor(33);
-    Histo1D_al_cvd_si_Station_out[0]->Draw("same");
+    Histo1D_al_cvd_si_Station_out[0]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station_out[0]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station_out[0]->SetFillColor(15);
-    Histo1D_cvd_si_Station_out[0]->Draw("same");
+    Histo1D_cvd_si_Station_out[0]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station_out[0]->Draw("SAME HIST");
 
     Histo1D_Station_out[0][3]->SetFillColor(18);
-    Histo1D_Station_out[0][3]->Draw("same");
+    Histo1D_Station_out[0][3]->SetFillStyle(1001);
+    Histo1D_Station_out[0][3]->Draw("SAME HIST");
 
     gPad->RedrawAxis();
 
@@ -982,6 +1050,7 @@ void CbmMvdRadLength::Finish() {
     TLegend* legendmb_S0_in_out = new TLegend(0.55,0.4,0.9,0.9);//former 0.65,0.5
     legendmb_S0_in_out->SetBorderSize(1);
     legendmb_S0_in_out->SetFillColor(0);
+    legendmb_S0_in_out->SetFillStyle(1001);
     legendmb_S0_in_out->AddEntry(Histo1D_Station[0][0],"FPC","f");
     legendmb_S0_in_out->AddEntry(Histo1D_Station[0][1],"Sensors","f");
     legendmb_S0_in_out->AddEntry(Histo1D_Station[0][2],"Glue","f");
@@ -990,7 +1059,7 @@ void CbmMvdRadLength::Finish() {
     legendmb_S0_in_out->AddEntry((TObject*)MB_limit_S0_in_out,"Material budget target value","l");
     legendmb_S0_in_out->AddEntry((TObject*)MB_average_S0,"Average material budget","l");
     legendmb_S0_in_out->AddEntry((TObject*)Acceptance_S0_in_out,"End of geometrical acceptance","l");
-    legendmb_S0_in_out->Draw();
+    legendmb_S0_in_out->Draw("HIST");
 
     //---- Station_1
     //acceptance distribution
@@ -998,6 +1067,7 @@ void CbmMvdRadLength::Finish() {
     cmaterialbudget_Station1_CVD_in_out->cd();
     Histo1D_Station_norm_in[1]->SetTitle("Material Budget Station 1");
     Histo1D_Station_norm_in[1]->SetFillColor(8);
+    Histo1D_Station_norm_in[1]->SetFillStyle(1001);
     Histo1D_Station_norm_in[1]->SetMaximum(y_maximum);
     Histo1D_Station_norm_in[1]->GetXaxis()->SetTitle("#vartheta [#circ]");
     Histo1D_Station_norm_in[1]->GetYaxis()->SetTitle("x/X_{0} [\%]");
@@ -1008,28 +1078,35 @@ void CbmMvdRadLength::Finish() {
     Histo1D_Station_norm_in[1]->GetXaxis()->SetLabelSize(0.06);
     Histo1D_Station_norm_in[1]->GetXaxis()->SetRange(0,600);
     Histo1D_Station_norm_in[1]->GetYaxis()->SetLabelSize(0.06);
-    Histo1D_Station_norm_in[1]->Draw("");
+    Histo1D_Station_norm_in[1]->Draw("HIST");
 
     Histo1D_al_cvd_si_Station_in[1]->SetFillColor(38);
-    Histo1D_al_cvd_si_Station_in[1]->Draw("same");
+    Histo1D_al_cvd_si_Station_in[1]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station_in[1]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station_in[1]->SetFillColor(1);
-    Histo1D_cvd_si_Station_in[1]->Draw("same");
+    Histo1D_cvd_si_Station_in[1]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station_in[1]->Draw("SAME HIST");
 
     Histo1D_Station_in[1][3]->SetFillColor(16);
-    Histo1D_Station_in[1][3]->Draw("same");
+    Histo1D_Station_in[1][3]->SetFillStyle(1001);
+    Histo1D_Station_in[1][3]->Draw("SAME HIST");
 
     Histo1D_Station_norm_out[1]->SetFillColor(29);
-    Histo1D_Station_norm_out[1]->Draw("same");
+    Histo1D_Station_norm_out[1]->SetFillStyle(1001);
+    Histo1D_Station_norm_out[1]->Draw("SAME HIST");
 
     Histo1D_al_cvd_si_Station_out[1]->SetFillColor(33);
-    Histo1D_al_cvd_si_Station_out[1]->Draw("same");
+    Histo1D_al_cvd_si_Station_out[1]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station_out[1]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station_out[1]->SetFillColor(15);
-    Histo1D_cvd_si_Station_out[1]->Draw("same");
+    Histo1D_cvd_si_Station_out[1]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station_out[1]->Draw("SAME HIST");
 
     Histo1D_Station_out[1][3]->SetFillColor(18);
-    Histo1D_Station_out[1][3]->Draw("same");
+    Histo1D_Station_out[1][3]->SetFillStyle(1001);
+    Histo1D_Station_out[1][3]->Draw("SAME HIST");
 
     gPad->RedrawAxis();
 
@@ -1058,6 +1135,7 @@ void CbmMvdRadLength::Finish() {
     TLegend* legendmb_S1_in_out = new TLegend(0.55,0.4,0.9,0.9); //former 0.65,0.5
     legendmb_S1_in_out->SetBorderSize(1);
     legendmb_S1_in_out->SetFillColor(0);
+    legendmb_S1_in_out->SetFillStyle(1001);
     legendmb_S1_in_out->AddEntry(Histo1D_Station[1][0],"FPC","f");
     legendmb_S1_in_out->AddEntry(Histo1D_Station[1][1],"Sensors","f");
     legendmb_S1_in_out->AddEntry(Histo1D_Station[1][2],"Glue","f");
@@ -1066,7 +1144,7 @@ void CbmMvdRadLength::Finish() {
     legendmb_S1_in_out->AddEntry((TObject*)MB_limit_S1_in_out,"Material budget target value","l");
     legendmb_S1_in_out->AddEntry((TObject*)MB_average_S1,"Average material budget","l");
     legendmb_S1_in_out->AddEntry((TObject*)Acceptance_S1_in_out,"End of geometrical acceptance","l");
-    legendmb_S1_in_out->Draw();
+    legendmb_S1_in_out->Draw("HIST");
 
     //---- Station_2
     //acceptance distribution
@@ -1074,6 +1152,7 @@ void CbmMvdRadLength::Finish() {
     cmaterialbudget_Station2_CVD_in_out->cd();
     Histo1D_Station_norm_in[2]->SetTitle("Material Budget Station 2");
     Histo1D_Station_norm_in[2]->SetFillColor(8);
+    Histo1D_al_cvd_si_Station_in[0]->SetFillStyle(1001);
     Histo1D_Station_norm_in[2]->SetMaximum(y_maximum);
     Histo1D_Station_norm_in[2]->GetXaxis()->SetTitle("#vartheta [#circ]");
     Histo1D_Station_norm_in[2]->GetYaxis()->SetTitle("x/X_{0} [\%]");
@@ -1084,28 +1163,35 @@ void CbmMvdRadLength::Finish() {
     Histo1D_Station_norm_in[2]->GetXaxis()->SetLabelSize(0.06);
     Histo1D_Station_norm_in[2]->GetXaxis()->SetRange(0,600);
     Histo1D_Station_norm_in[2]->GetYaxis()->SetLabelSize(0.06);
-    Histo1D_Station_norm_in[2]->Draw("");
+    Histo1D_Station_norm_in[2]->Draw("HIST");
 
     Histo1D_al_cvd_si_Station_in[2]->SetFillColor(38);
-    Histo1D_al_cvd_si_Station_in[2]->Draw("same");
+    Histo1D_al_cvd_si_Station_in[2]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station_in[2]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station_in[2]->SetFillColor(1);
-    Histo1D_cvd_si_Station_in[2]->Draw("same");
+    Histo1D_cvd_si_Station_in[2]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station_in[2]->Draw("SAME HIST");
 
     Histo1D_Station_in[2][3]->SetFillColor(16);
-    Histo1D_Station_in[2][3]->Draw("same");
+    Histo1D_Station_in[2][3]->SetFillStyle(1001);
+    Histo1D_Station_in[2][3]->Draw("SAME HIST");
 
     Histo1D_Station_norm_out[2]->SetFillColor(29);
-    Histo1D_Station_norm_out[2]->Draw("same");
+    Histo1D_Station_norm_out[2]->SetFillStyle(1001);
+    Histo1D_Station_norm_out[2]->Draw("SAME HIST");
 
     Histo1D_al_cvd_si_Station_out[2]->SetFillColor(33);
-    Histo1D_al_cvd_si_Station_out[2]->Draw("same");
+    Histo1D_al_cvd_si_Station_out[2]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station_out[2]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station_out[2]->SetFillColor(15);
-    Histo1D_cvd_si_Station_out[2]->Draw("same");
+    Histo1D_cvd_si_Station_out[2]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station_out[2]->Draw("SAME HIST");
 
     Histo1D_Station_out[2][3]->SetFillColor(18);
-    Histo1D_Station_out[2][3]->Draw("same");
+    Histo1D_Station_out[2][3]->SetFillStyle(1001);
+    Histo1D_Station_out[2][3]->Draw("SAME HIST");
 
     gPad->RedrawAxis();
 
@@ -1134,6 +1220,7 @@ void CbmMvdRadLength::Finish() {
     TLegend* legendmb_S2_in_out = new TLegend(0.55,0.4,0.9,0.9);  //former 0.65,0.5
     legendmb_S2_in_out->SetBorderSize(1);
     legendmb_S2_in_out->SetFillColor(0);
+    legendmb_S2_in_out->SetFillStyle(1001);
     legendmb_S2_in_out->AddEntry(Histo1D_Station[2][0],"FPC","f");
     legendmb_S2_in_out->AddEntry(Histo1D_Station[2][1],"Sensors","f");
     legendmb_S2_in_out->AddEntry(Histo1D_Station[2][2],"Glue","f");
@@ -1142,7 +1229,7 @@ void CbmMvdRadLength::Finish() {
     legendmb_S2_in_out->AddEntry((TObject*)MB_limit_S2_in_out,"Material budget target value","l");
     legendmb_S2_in_out->AddEntry((TObject*)MB_average_S2,"Average material budget","l");
     legendmb_S2_in_out->AddEntry((TObject*)Acceptance_S2_in_out,"End of geometrical acceptance","l");
-    legendmb_S2_in_out->Draw();
+    legendmb_S2_in_out->Draw("HIST");
 
     //---- Station_3
     //acceptance distribution
@@ -1150,6 +1237,7 @@ void CbmMvdRadLength::Finish() {
     cmaterialbudget_Station3_CVD_in_out->cd();
     Histo1D_Station_norm_in[3]->SetTitle("Material Budget Station 3");
     Histo1D_Station_norm_in[3]->SetFillColor(8);
+    Histo1D_Station_norm_in[3]->SetFillStyle(1001);
     Histo1D_Station_norm_in[3]->SetMaximum(y_maximum);
     Histo1D_Station_norm_in[3]->GetXaxis()->SetTitle("#vartheta [#circ]");
     Histo1D_Station_norm_in[3]->GetYaxis()->SetTitle("x/X_{0} [\%]");
@@ -1160,28 +1248,35 @@ void CbmMvdRadLength::Finish() {
     Histo1D_Station_norm_in[3]->GetXaxis()->SetLabelSize(0.06);
     Histo1D_Station_norm_in[3]->GetXaxis()->SetRange(0,600);
     Histo1D_Station_norm_in[3]->GetYaxis()->SetLabelSize(0.06);
-    Histo1D_Station_norm_in[3]->Draw("");
+    Histo1D_Station_norm_in[3]->Draw("HIST");
 
     Histo1D_al_cvd_si_Station_in[3]->SetFillColor(38);
-    Histo1D_al_cvd_si_Station_in[3]->Draw("same");
+    Histo1D_al_cvd_si_Station_in[3]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station_in[3]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station_in[3]->SetFillColor(1);
-    Histo1D_cvd_si_Station_in[3]->Draw("same");
+    Histo1D_cvd_si_Station_in[3]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station_in[3]->Draw("SAME HIST");
 
     Histo1D_Station_in[3][3]->SetFillColor(16);
-    Histo1D_Station_in[3][3]->Draw("same");
+    Histo1D_Station_in[3][3]->SetFillStyle(1001);
+    Histo1D_Station_in[3][3]->Draw("SAME HIST");
 
     Histo1D_Station_norm_out[3]->SetFillColor(29);
-    Histo1D_Station_norm_out[3]->Draw("same");
+    Histo1D_Station_norm_out[3]->SetFillStyle(1001);
+    Histo1D_Station_norm_out[3]->Draw("SAME HIST");
 
     Histo1D_al_cvd_si_Station_out[3]->SetFillColor(33);
-    Histo1D_al_cvd_si_Station_out[3]->Draw("same");
+    Histo1D_al_cvd_si_Station_out[3]->SetFillStyle(1001);
+    Histo1D_al_cvd_si_Station_out[3]->Draw("SAME HIST");
 
     Histo1D_cvd_si_Station_out[3]->SetFillColor(15);
-    Histo1D_cvd_si_Station_out[3]->Draw("same");
+    Histo1D_cvd_si_Station_out[3]->SetFillStyle(1001);
+    Histo1D_cvd_si_Station_out[3]->Draw("SAME HIST");
 
     Histo1D_Station_out[3][3]->SetFillColor(18);
-    Histo1D_Station_out[3][3]->Draw("same");
+    Histo1D_Station_out[3][3]->SetFillStyle(1001);
+    Histo1D_Station_out[3][3]->Draw("SAME HIST");
 
     gPad->RedrawAxis();
 
@@ -1210,6 +1305,7 @@ void CbmMvdRadLength::Finish() {
     TLegend* legendmb_S3_in_out = new TLegend(0.55,0.4,0.9,0.9);  //former 0.65,0.5
     legendmb_S3_in_out->SetBorderSize(1);
     legendmb_S3_in_out->SetFillColor(0);
+    legendmb_S3_in_out->SetFillStyle(1001);
     legendmb_S3_in_out->AddEntry(Histo1D_Station[3][0],"FPC","f");
     legendmb_S3_in_out->AddEntry(Histo1D_Station[3][1],"Sensors","f");
     legendmb_S3_in_out->AddEntry(Histo1D_Station[3][2],"Glue","f");
@@ -1218,7 +1314,7 @@ void CbmMvdRadLength::Finish() {
     legendmb_S3_in_out->AddEntry((TObject*)MB_limit_S3_in_out,"Material budget target value","l");
     legendmb_S3_in_out->AddEntry((TObject*)MB_average_S3,"Average material budget","l");
     legendmb_S3_in_out->AddEntry((TObject*)Acceptance_S3_in_out,"End of geometrical acceptance","l");
-    legendmb_S3_in_out->Draw();
+    legendmb_S3_in_out->Draw("HIST");
 
 
 

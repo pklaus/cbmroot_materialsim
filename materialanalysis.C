@@ -25,13 +25,13 @@ gStyle->SetOptStat(0);
   Int_t iVerbose = 0;
 
   // Input file = Output file materialsimulation macro
-  TString inFile = "/u/tischler/frankfurtCAD/MVD_PhD/Sim_Box_1MEvents_mvd_15a_360phi.mc.root"
+  TString inFile = "Sim_Box_1MEvents_mvd_15a_360phi.mc.root";
   
   // Parameter file = Output file materialsimulation macro
-  TString parFile ="/u/tischler/frankfurtCAD/MVD_PhD/Sim_Box_1MEvents_mvd_15a_360phi.params.root";
+  TString parFile ="Sim_Box_1MEvents_mvd_15a_360phi.params.root";
   
   // Output file = Material budget 
-  TString outFile ="/u/tischler/frankfurtCAD/MVD_PhD/Sim_Box_1MEvents_mvd_15a_360phi.radlen.root";
+  TString outFile ="Sim_Box_1MEvents_mvd_15a_360phi.radlen.root";
 
 
   TList *parFileList = new TList();
@@ -53,31 +53,6 @@ gStyle->SetOptStat(0);
   // -----   Timer   --------------------------------------------------------
   TStopwatch timer;
   timer.Start();
-  // ------------------------------------------------------------------------
-
-
-  // ----  Load libraries   -------------------------------------------------
-  gROOT->LoadMacro("$VMCWORKDIR/gconfig/basiclibs.C");
-  basiclibs();
-  gSystem->Load("libGeoBase");
-  gSystem->Load("libParBase");
-  gSystem->Load("libBase");
-  gSystem->Load("libCbmBase");
-  gSystem->Load("libCbmData");
-  gSystem->Load("libField");
-  gSystem->Load("libGen");
-  gSystem->Load("libPassive");
-  gSystem->Load("libMvd");
-  gSystem->Load("libSts");
-  gSystem->Load("libRich");
-  gSystem->Load("libTrd");
-  gSystem->Load("libTof");
-  gSystem->Load("libEcal");
-  gSystem->Load("libGlobal");
-  gSystem->Load("libKF");
-  gSystem->Load("libL1");
-  gSystem->Load("libLittrack");
-  gSystem->Load("libMinuit2"); // Nedded for rich ellipse fitter
   // ------------------------------------------------------------------------
 
 
