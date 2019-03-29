@@ -8,7 +8,9 @@ void setup_mvd_only()
 
   // -----  Geometry Tags  --------------------------------------------------
   TString magnetGeoTag    = "v15a";
-  TString mvdGeoTag       = "v17y";
+//  TString mvdGeoTag       = "v17y";
+  TString mvdGeoTag       = "v17a_tr";
+//  TString mvdGeoTag       = "v17a_vx";
   // ------------------------------------------------------------------------
 
 
