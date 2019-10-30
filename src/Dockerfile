@@ -1,5 +1,6 @@
-FROM pklaus/cbmroot:opensuse-42.3_DEC17
+#FROM pklaus/cbmroot:opensuse-42.3_DEC17
 #FROM pklaus/cbmroot:opensuse-15.0_OCT18
+FROM pklaus/cbmroot:opensuse-15.1_OCT19
 
 
 COPY CbmMvdRadLength.cxx CbmMvdRadLength.h /cbmroot/mvd/
@@ -16,4 +17,3 @@ RUN cmake \
     -DCMAKE_C_COMPILER=$($SIMPATH/bin/fairsoft-config --cc) \
     .. \
  && nice make -j8
-

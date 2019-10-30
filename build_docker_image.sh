@@ -1,4 +1,8 @@
 #!/bin/bash
 
-docker build -t pklaus/cbmroot_materialsim:DEC17 .
-#docker build -t pklaus/cbmroot_materialsim:OCT18 .
+#TAG=DEC17
+#TAG=OCT18
+TAG=OCT19
+
+docker build -t pklaus/cbmroot_materialsim:latest src
+docker tag pklaus/cbmroot_materialsim:{latest,$TAG}
