@@ -4,7 +4,7 @@ FROM pklaus/cbmroot:opensuse-15.1_OCT19
 
 
 COPY CbmMvdRadLength.cxx CbmMvdRadLength.h /cbmroot/mvd/
-COPY materialsimulation.c materialanalysis.C /cbmroot/macro/mvd/
+COPY materialsimulation.C materialanalysis.C /cbmroot/macro/mvd/
 COPY setup_mvd_only.C /cbmroot/geometry/setup/
 COPY registerSetup.C /cbmroot/macro/run/modules/
 

@@ -6,7 +6,7 @@ RESULT_IMAGE=materialsim_result
 docker run \
   --name $CONTAINER \
   pklaus/cbmroot_materialsim:DEC17 \
-  "source ~/.bashrc; cd /cbmroot/macro/mvd; root -b ./materialsimulation.c"
+  "source ~/.bashrc; cd /cbmroot/macro/mvd; root -b ./materialsimulation.C"
 
 docker commit $CONTAINER $RESULT_IMAGE
 
