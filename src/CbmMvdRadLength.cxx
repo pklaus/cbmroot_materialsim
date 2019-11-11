@@ -19,7 +19,6 @@
 
 // Includes from MVD
 #include "CbmMvdRadLength.h"
-#include "CbmMvdGeoPar.h"
 
 
 // Includes from base

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 #TAG=DEC17
 #TAG=OCT18
 TAG=OCT19
