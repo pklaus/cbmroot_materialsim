@@ -5,25 +5,51 @@ void materialsimulation(int nEvents = 1000000){
   gDebug=0;
   int verboseLevel = 0;
 
-  //Simulation requires:
-  // MVD model as root geometry
-  // Pipe geometry pipe_standard_tobias.geo
-  // in cbmroot/mvd/ - folder
-  // CbmMvdRadLength.cxx and CbmMvdRadLength.h need to be present
-  // in CbmMvd.cxx in sequence "CheckIfSensitive" the activation of active sensor parts should be set
-
   TString inDir   = gSystem->Getenv("VMCWORKDIR");
 
-  TString outFile = "Sim_Box_1MEvents_mvd_15a_360phi.mc.root";
-  TString parFile = "Sim_Box_1MEvents_mvd_15a_360phi.params.root";
+  TString outFile = "Sim_Box_1MEvents_mvd_v17a_tr_360phi.mc.root";
+  TString parFile = "Sim_Box_1MEvents_mvd_v17a_tr_360phi.params.root";
 
   FairLogger* logg = FairLogger::GetLogger();
   logg->SetLogScreenLevel("INFO"); // INFO DEBUG
 
   // Create and add detectors / load setup
-  gROOT->LoadMacro(inDir + "/geometry/setup/setup_mvd_only.C");
-  gInterpreter->ProcessLine("setup_mvd_only()");
+
+  // -----  Geometry Tags  --------------------------------------------------
+  TString magnetGeoTag    = "v15a";
+//  TString mvdGeoTag       = "v17y";
+  TString mvdGeoTag       = "v17a_tr";
+//  TString mvdGeoTag       = "v17a_vx";
+  // ------------------------------------------------------------------------
+
+
+  // -----  Magnetic field  -------------------------------------------------
+  TString fieldTag      = "v12b";
+  Double_t fieldZ       = 40.;            // field centre z position
+  Double_t fieldScale   =  1.;            // field scaling factor
+  // ------------------------------------------------------------------------
+
+
+  // -----  Create setup  ---------------------------------------------------
   CbmSetup* cbmsetup = CbmSetup::Instance();
+  if ( ! cbmsetup->IsEmpty() ) {
+  	std::cout << "-W- setup_mvd_test: overwriting existing setup"
+  			      << cbmsetup->GetTitle() << std::endl;
+  	cbmsetup->Clear();
+  }
+  cbmsetup->SetTitle("MVD - Only Setup");
+  cbmsetup->SetModule(kMagnet, magnetGeoTag);
+ 
+  cbmsetup->SetModule(kMvd, mvdGeoTag);
+
+  cbmsetup->SetField(fieldTag, fieldScale, 0., 0., fieldZ);
+  // ------------------------------------------------------------------------
+
+
+  // -----   Screen output   ------------------------------------------------
+  cbmsetup->Print();
+  // ------------------------------------------------------------------------
+
   /*cbmsetup->RemoveModule(kSts);
   cbmsetup->RemoveModule(kRich);
   cbmsetup->RemoveModule(kTrd);

@@ -7,4 +7,4 @@ set -ex
 TAG=OCT19
 
 docker build -t pklaus/cbmroot_materialsim:latest src
-docker tag pklaus/cbmroot_materialsim:{latest,$TAG}
+docker tag pklaus/cbmroot_materialsim:{latest,${TAG}_noana}

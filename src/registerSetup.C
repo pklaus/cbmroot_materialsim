@@ -14,11 +14,6 @@ void registerSetup()
 	// --- Get the setup singleton. Check whether it was defined (has at
 	// --- least one module).
 	CbmSetup* setup = CbmSetup::Instance();
-	if ( ! setup->GetNofModules() ) {
-		std::cerr << "-E- registerSetup: setup " << setup->GetTitle()
-				      << " is empty!" << std::endl;
-		return;
-	}
 
 	// --- Get the FairRunSim instance
 	FairRunSim* run = FairRunSim::Instance();
@@ -84,20 +79,13 @@ void registerSetup()
 				case kTrd:  module = new CbmTrd("TRD", isActive); break;
 				case kTof:  module = new CbmTof("TOF", isActive); break;
 				case kEcal: module = new CbmEcal("Ecal", isActive); break;
-				case kPsd:  {
-					CbmPsdv1* psd = new CbmPsdv1("PSD", isActive);
-					psd->SetZposition(setup->GetPsdPositionZ());
-					psd->SetXshift(setup->GetPsdPositionX());
-					psd->SetGeoFile(fileName);
-					module = (FairModule*) psd;
-					break;
-				}
+				case kPsd:  module = new CbmPsdMC(isActive); break;
 				case kPlatform: module = new CbmPlatform("PLATFORM"); break;
 				default: std::cout << "-E- registerSetup: Unknown module ID "
 				                   << moduleId << std::endl; break;
 			}  //? known moduleId
 			if ( module ) {
-				if ( moduleId != kPsd ) module->SetGeometryFileName(fileName.Data());
+				module->SetGeometryFileName(fileName.Data());
 				run->AddModule(module);
 			}  //? valid module pointer
 		}  //? module in setup
